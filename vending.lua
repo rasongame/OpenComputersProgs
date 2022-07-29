@@ -5,17 +5,17 @@ local pim = component.pim
 local stacksToInsert = 2
 local CHEST_SIDE = "west"
 local FILLED_CHEST_SIDE = "north"
-[[
-    Для работы требуется OpenPeripheral
-    В FILLED_CHEST сторону загружаете питательные баночки
-    В CHEST сторону выкидываются использованные баночки
-
-]] 
-local chestCounter = 1
+local usingME = true
+-- [[
+--     Для работы требуется OpenPeripheral
+--     В FILLED_CHEST сторону загружаете питательные баночки
+--     В CHEST сторону выкидываются использованные баночки 
+-- ]]
+local chestSlot = 1
 local function replaceCans(slot, i)
     pim.pushItemIntoSlot(CHEST_SIDE, i)
-    pim.pullItemIntoSlot(FILLED_CHEST_SIDE, chestCounter, 64, i)
-    chestCounter = chestCounter + 1
+    pim.pullItemIntoSlot(FILLED_CHEST_SIDE, chestSlot, 64, i)
+    if not usingME then chestSlot = chestSlot + 1 end
 
 end
 local function scanPlayer()
