@@ -14,8 +14,11 @@ local configPath = "/Glasses.cfg"
 local workspace, window, menu = system.addWindow(GUI.tabbedWindow(1, 1, 60, 20, 0xE1E1E1))
 
 local layout, layout2 = nil, nil
-
-local glassUpdateHandler = nil
+if glassUpdateHandler then
+    if event.removeHandler(glassUpdateHandler) then 
+        glassUpdateHandler = nil
+    end
+end
 local items, fluids = nil, nil
 local updateDelay = 1
 local useMESystem, useMEPowerSystem, useMECPUSystem = true, true, true
