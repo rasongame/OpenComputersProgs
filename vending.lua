@@ -14,7 +14,7 @@ local usingME = true
 local chestSlot = 1
 local function replaceCans(slot, i)
     pim.pushItemIntoSlot(CHEST_SIDE, i)
-    pim.pullItemIntoSlot(FILLED_CHEST_SIDE, chestSlot, 64, i)
+    pim.pullItemIntoSlot(FILLED_CHEST_SIDE, chestSlot, slot.qty, i)
     if not usingME then chestSlot = chestSlot + 1 end
 
 end
