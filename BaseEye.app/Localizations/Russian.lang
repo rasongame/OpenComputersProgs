@@ -1,0 +1,17 @@
+{
+    useMESystem = "Показывать информацию о МЭ:",
+    useMEPowerSystem = "Показывать сколько энергии в МЭ",
+    useMECPUSystem = "Показывать инфо о процессорах",
+    useMEItemsSystem = "Показывать инфо о предметах",
+    useMEFluidsSystem = "Показывать инфо о жижах",
+    inSeconds = "В секундах",
+    FluidName = "Название жижки",
+    ItemName = "Название предмета",
+    Change = "Добавить",
+    SaveToFile = "Сохранить в файл",
+    updateDelay = "Частота обновления",
+    cantRestoreSettings = 'Какая-то хуйня случилась. Выставляем дефолтные настройки',
+	cantFindFluid = "Жижа не найдена в МЭ.",
+
+
+}

@@ -1,0 +1,16 @@
+{
+    useMESystem = "Show ME info:",
+    useMEPowerSystem = "Show ME energy level",
+    useMECPUSystem = "Show processor info",
+    useMEItemsSystem = "Display items info",
+    useMEFluidsSystem = "Display liquids info",
+    inSeconds = "In seconds",
+    FluidName = "Fluid name",
+    ItemName = "Item name",
+    Change = "Add",
+    SaveToFile = "Save to file",
+    updateDelay = "Update delay",
+	cantRestoreSettings = "Cant restore settigns. Using default preset",
+	cantFindFluid = "This fluid not finded in ME",
+
+}
